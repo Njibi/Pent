@@ -27,7 +27,11 @@ const reviewSchema = new mongoose.Schema({
    likes: {
     type: Array,
     default: []
-   }
+   },
+   price: {
+    type: String,
+    max: 40
+   },
 },
   {timestamps : true}
 );
